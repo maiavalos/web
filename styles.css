@@ -13,7 +13,7 @@ body {
 header {
     width: 100%;
     padding: 40px 0;
-    font-size: 8vw;
+    font-size: 42px;  /* Ajuste para PC, tamaño más razonable */
     font-weight: 700;
     text-transform: uppercase;
     color: #1d0d53;
@@ -125,7 +125,7 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
     header {
-        font-size: 6vw;
+        font-size: 6vw;  /* Ajuste para la versión móvil */
         padding: 30px 10px;
     }
     .container {
