@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,12 +11,13 @@ body {
     text-align: center;
 }
 
+/* Encabezado */
 header {
     width: 100%;
-    padding: 50px 0;
-    font-size: 48px;
+    padding: 40px 0;
+    font-size: 42px;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     background: linear-gradient(135deg, #ff7a00, #ff7a99);
     -webkit-background-clip: text;
     background-clip: text;
@@ -26,17 +28,18 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 56px;
+    font-size: 50px;
     line-height: 1.2;
 }
 
 header:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
+/* Contenedor principal */
 .container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -44,15 +47,17 @@ header:hover {
     align-items: center;
 }
 
+/* Secciones */
 .section {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(40px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    width: 100%;
 }
 
 .section.visible {
@@ -60,15 +65,16 @@ header:hover {
     transform: translateY(0);
 }
 
+/* Información de contacto */
 .contact-info {
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 18px;
+    line-height: 1.6;
     font-weight: 500;
-    text-align: center;
 }
 
+/* Enlaces sociales */
 .social-link {
-    font-size: 20px;
+    font-size: 18px;
     color: #ccff00;
     text-decoration: none;
     font-weight: bold;
@@ -79,44 +85,47 @@ header:hover {
     color: #ff7a99;
 }
 
+/* Contenedor de imágenes */
 .image-placeholder {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     margin: 20px auto;
     height: auto;
     background: linear-gradient(135deg, #475569, #64748b);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 22px;
     color: #cbd5e1;
-    border-radius: 15px;
+    border-radius: 10px;
     font-style: italic;
     overflow: hidden;
-    padding: 15px;
+    padding: 10px;
 }
 
+/* Imágenes */
 img {
     width: 100%;
     height: auto;
-    border: 6px solid #64748b;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border: 4px solid #64748b;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     object-fit: cover;
 }
 
 img:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
+/* Pie de página */
 footer {
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     text-align: center;
-    padding: 30px;
-    font-size: 18px;
+    padding: 20px;
+    font-size: 16px;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
     font-weight: 500;
 }
@@ -129,4 +138,36 @@ footer a {
 
 footer a:hover {
     color: #ff7a99;
+}
+
+/* Adaptabilidad para móviles */
+@media (max-width: 768px) {
+    header {
+        font-size: 32px;
+        padding: 30px 0;
+    }
+    
+    header h1 {
+        font-size: 40px;
+    }
+    
+    .container {
+        width: 95%;
+    }
+    
+    .section {
+        padding: 30px;
+    }
+    
+    .contact-info {
+        font-size: 16px;
+    }
+    
+    .image-placeholder {
+        font-size: 18px;
+    }
+    
+    footer {
+        font-size: 14px;
+    }
 }
