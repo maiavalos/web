@@ -13,13 +13,15 @@ body {
 header {
     width: 100%;
     padding: 40px 0;
-    font-size: 42px;
+    font-size: 8vw;
     font-weight: 700;
     text-transform: uppercase;
     color: #1d0d53;
     background: linear-gradient(135deg, #5a5098, #26a69a);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    word-break: break-word;
+    text-align: center;
 }
 
 header:hover {
@@ -119,4 +121,23 @@ footer a {
 
 footer a:hover {
     color: #ade6e0;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 6vw;
+        padding: 30px 10px;
+    }
+    .container {
+        width: 95%;
+    }
+    .section {
+        padding: 30px;
+    }
+    .image-placeholder {
+        font-size: 18px;
+    }
+    footer {
+        font-size: 14px;
+    }
 }
