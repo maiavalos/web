@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Página cargada correctamente");
-
     const sections = document.querySelectorAll(".section");
-
+    
     function checkVisibility() {
         sections.forEach(section => {
             const rect = section.getBoundingClientRect();
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-
+    
     window.addEventListener("scroll", checkVisibility);
     checkVisibility();
 });
