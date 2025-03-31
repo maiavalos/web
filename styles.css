@@ -1,45 +1,34 @@
-/* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: #e2e8f0;
+    background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+    color: #462f9f;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-/* Encabezado */
 header {
     width: 100%;
     padding: 40px 0;
     font-size: 42px;
     font-weight: 700;
-    letter-spacing: 2px;
-    background: linear-gradient(135deg, #ff7a00, #ff7a99);
-    -webkit-background-clip: text;
-    background-clip: text;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #1d0d53;
+    background: linear-gradient(135deg, #5a5098, #26a69a);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 50px;
-    line-height: 1.2;
 }
 
 header:hover {
     transform: scale(1.05);
 }
 
-/* Contenedor principal */
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -47,17 +36,15 @@ header:hover {
     align-items: center;
 }
 
-/* Secciones */
 .section {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(237, 236, 248, 0.9);
     backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    width: 100%;
 }
 
 .section.visible {
@@ -65,50 +52,45 @@ header:hover {
     transform: translateY(0);
 }
 
-/* Información de contacto */
 .contact-info {
     font-size: 18px;
     line-height: 1.6;
     font-weight: 500;
 }
 
-/* Enlaces sociales */
 .social-link {
     font-size: 18px;
-    color: #ccff00;
+    color: #1e327b;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .social-link:hover {
-    color: #ff7a99;
+    color: #07095c;
 }
 
-/* Contenedor de imágenes */
 .image-placeholder {
     width: 100%;
     max-width: 800px;
     margin: 20px auto;
     height: auto;
-    background: linear-gradient(135deg, #475569, #64748b);
+    background: linear-gradient(135deg, #66beb5, #004d40);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    color: #cbd5e1;
+    color: #faeeee;
     border-radius: 10px;
     font-style: italic;
     overflow: hidden;
     padding: 10px;
 }
 
-/* Imágenes */
 img {
     width: 100%;
     height: auto;
-    border: 4px solid #64748b;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     object-fit: cover;
@@ -118,56 +100,23 @@ img:hover {
     transform: scale(1.05);
 }
 
-/* Pie de página */
 footer {
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background: #081865;
+    color: rgb(248, 239, 239);
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     font-size: 16px;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
     font-weight: 500;
 }
 
 footer a {
-    color: #ff8706;
+    color: #b2e9e5;
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
-    color: #ff7a99;
-}
-
-/* Adaptabilidad para móviles */
-@media (max-width: 768px) {
-    header {
-        font-size: 32px;
-        padding: 30px 0;
-    }
-    
-    header h1 {
-        font-size: 40px;
-    }
-    
-    .container {
-        width: 95%;
-    }
-    
-    .section {
-        padding: 30px;
-    }
-    
-    .contact-info {
-        font-size: 16px;
-    }
-    
-    .image-placeholder {
-        font-size: 18px;
-    }
-    
-    footer {
-        font-size: 14px;
-    }
+    color: #ade6e0;
 }
